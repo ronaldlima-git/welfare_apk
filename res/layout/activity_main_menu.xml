@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainMenuActivity">
+
+    <Button
+        android:id="@+id/btnMainMenuToBack"
+        android:layout_width="32sp"
+        android:layout_height="32sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_arrow_back_black_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMainMenuChangeInformation"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:drawableStart="@drawable/ic_gear_32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableLeft="@drawable/ic_gear_32dp" />
+
+    <ImageView
+        android:id="@+id/imgMainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnMainMenuToBack"
+        app:srcCompat="@drawable/ic_heart_84dp" />
+
+    <TextView
+        android:id="@+id/txtViewMainMenuNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:textColor="@color/title"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnMainMenuChangeInformation" />
+
+    <TextView
+        android:id="@+id/txtViewMainMenuEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:textColor="@color/title"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewMainMenuNome" />
+
+    <TextView
+        android:id="@+id/txtViewMainMenuPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:textColor="@color/title"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewMainMenuEmail" />
+
+    <Button
+        android:id="@+id/btnMainMenuConsultation"
+        android:layout_width="312dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/colorPrimaryDark"
+        android:drawableStart="@drawable/ic_report_65dp"
+        android:drawableLeft="@drawable/ic_report_65dp"
+        android:duplicateParentState="false"
+        android:foregroundGravity="center_vertical"
+        android:freezesText="false"
+        android:text="@string/btnMainMenuConsultation"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMainMenu" />
+
+    <Button
+        android:id="@+id/btnMainMenuTratament"
+        android:layout_width="312dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/colorPrimaryDark"
+        android:drawableStart="@drawable/ic_tablet_65dp"
+        android:drawableLeft="@drawable/ic_tablet_65dp"
+        android:duplicateParentState="false"
+        android:foregroundGravity="center_vertical"
+        android:freezesText="false"
+        android:text="@string/btnMainMenuTratament"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainMenuConsultation" />
+
+    <Button
+        android:id="@+id/btnMainMenuContacts"
+        android:layout_width="312dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/colorPrimaryDark"
+        android:drawableStart="@drawable/ic_smartphone_65dp"
+        android:drawableLeft="@drawable/ic_smartphone_65dp"
+        android:duplicateParentState="false"
+        android:foregroundGravity="center_vertical"
+        android:freezesText="false"
+        android:text="@string/btnMainMenuContacts"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainMenuTratament" />
+
+    <Button
+        android:id="@+id/btnMainMenuHealthInsurance"
+        android:layout_width="312dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/colorPrimaryDark"
+        android:drawableStart="@drawable/ic_hospital_65dp"
+        android:drawableLeft="@drawable/ic_hospital_65dp"
+        android:duplicateParentState="false"
+        android:foregroundGravity="center_vertical"
+        android:freezesText="false"
+        android:text="@string/btnMainMenuHealthInsurance"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainMenuContacts" />
+
+
+
+</android.support.constraint.ConstraintLayout>
